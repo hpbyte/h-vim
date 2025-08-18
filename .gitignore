@@ -1,0 +1,5 @@
+lazy-lock.json
+mason/
+.DS_Store
+*.log
+.fzf_history

@@ -1,0 +1,1 @@
+vim.g.hvim_theme = "onedark"
