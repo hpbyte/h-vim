@@ -33,6 +33,9 @@ keymap.set("n", "<leader>vtm", "<cmd>highlight Pmenu ctermbg=gray guibg=gray<CR>
 
 keymap.set("v", "X", '"_d', opts)
 
+keymap.set("n", "<leader>/", "gcc", { remap = true })
+keymap.set("v", "<leader>/", "gc", { remap = true })
+
 
 keymap.set("n", "<C-h>", "<cmd>bprevious<cr>", opts)
 keymap.set("n", "<C-l>", "<cmd>bnext<cr>", opts)
