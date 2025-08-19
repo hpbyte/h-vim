@@ -10,7 +10,7 @@
 --       },
 --     },
 --   },
---   tsserver = {},
+--   ts_ls = {},
 --   pylsp = {},
 --   rust_analyzer = {},
 --   clangd = {},
