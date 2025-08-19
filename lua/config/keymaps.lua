@@ -39,6 +39,8 @@ keymap.set("v", "<leader>/", "gc", { remap = true })
 
 keymap.set("n", "<C-h>", "<cmd>bprevious<cr>", opts)
 keymap.set("n", "<C-l>", "<cmd>bnext<cr>", opts)
+keymap.set("n", "<leader>bd", "<cmd>bd<cr>", opts)
+keymap.set("n", "<leader>bl", "<cmd>buffers<cr>", opts)
 
 local function setup_lsp_keymaps(bufnr)
   local lsp_opts = { noremap = true, silent = true, buffer = bufnr }
