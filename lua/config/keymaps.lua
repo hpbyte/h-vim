@@ -62,6 +62,7 @@ local function setup_lsp_keymaps(bufnr)
   keymap.set("n", "<leader>g]", vim.diagnostic.goto_next, lsp_opts)
   keymap.set("n", "<leader>gp", vim.diagnostic.goto_prev, lsp_opts)
   keymap.set("n", "<leader>gn", vim.diagnostic.goto_next, lsp_opts)
+  keymap.set("n", "<leader>gl", vim.diagnostic.open_float, lsp_opts)
   keymap.set("n", "T", vim.lsp.buf.hover, lsp_opts)
 end
 

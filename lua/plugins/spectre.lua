@@ -25,17 +25,17 @@ return {
           },
           ["enter_file"] = {
             map = "<cr>",
-            cmd = "<cmd>lua require('spectre').enter_file()<CR>",
+            cmd = "<cmd>lua require('spectre.actions').select_entry()<CR>",
             desc = "goto current file"
           },
           ["send_to_qf"] = {
             map = "<leader>q",
-            cmd = "<cmd>lua require('spectre').send_to_qf()<CR>",
+            cmd = "<cmd>lua require('spectre.actions').send_to_qf()<CR>",
             desc = "send all item to quickfix"
           },
           ["replace_cmd"] = {
             map = "<leader>c",
-            cmd = "<cmd>lua require('spectre').replace_cmd()<CR>",
+            cmd = "<cmd>lua require('spectre.actions').replace_cmd()<CR>",
             desc = "input replace vim command"
           },
           ["show_option_menu"] = {
@@ -45,12 +45,12 @@ return {
           },
           ["run_current_replace"] = {
             map = "<leader>rc",
-            cmd = "<cmd>lua require('spectre').run_current_replace()<CR>",
+            cmd = "<cmd>lua require('spectre.actions').run_current_replace()<CR>",
             desc = "replace current line"
           },
           ["run_replace"] = {
             map = "<leader>R",
-            cmd = "<cmd>lua require('spectre').run_replace()<CR>",
+            cmd = "<cmd>lua require('spectre.actions').run_replace()<CR>",
             desc = "replace all"
           },
           ["change_view_mode"] = {

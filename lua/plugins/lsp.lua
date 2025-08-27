@@ -22,6 +22,25 @@ return {
 
       local capabilities = cmp_nvim_lsp.default_capabilities()
 
+      vim.diagnostic.config({
+        virtual_text = {
+          prefix = "●",
+          source = "if_many",
+        },
+        signs = true,
+        underline = true,
+        update_in_insert = false,
+        severity_sort = true,
+        float = {
+          focusable = false,
+          style = "minimal",
+          border = "rounded",
+          source = "always",
+          header = "",
+          prefix = "",
+        },
+      })
+
       local on_attach = function(client, bufnr)
         if _G.setup_lsp_keymaps then
           _G.setup_lsp_keymaps(bufnr)
