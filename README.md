@@ -31,19 +31,23 @@ A minimal Neovim config for speed and sanity.
 ## ⚡️ Requirements
 
 Ensure you have the following tools installed:
-- `Neovim`
-- `ripgrep` (rg)
-- `fd` or `find`
+
+- `Neovim` (>= 0.11.0)
+- `ripgrep` (rg) - `brew install ripgrep`
+- `fd` or `find` - `brew install fd`
 - `git`
+- A [Nerd Font](https://www.nerdfonts.com/) for proper icon display
 
 ## 📦 Installation
 
 1. Backup your existing Neovim configs:
+
 ```bash
 mv ~/.config/nvim{,.bak}
 ```
 
 2. Clone this repository to your Neovim config directory:
+
 ```bash
 git clone https://github.com/hpbyte/h-vim.git ~/.config/nvim
 ```
@@ -58,9 +62,9 @@ Use `:Mason` to browse available servers and edit `lua/config/lsp_servers.lua` t
 
 ```lua
 vim.g.hvim_lsp_servers = {
-  tsserver = {},
-  gopls = {},
-  lua_ls = {
+  ts_ls = {},        -- TypeScript/JavaScript
+  gopls = {},        -- Go
+  lua_ls = {         -- Lua
     settings = {
       Lua = {
         diagnostics = {
@@ -69,8 +73,8 @@ vim.g.hvim_lsp_servers = {
       },
     },
   },
-  pylsp = {},
-  rust_analyzer = {},
+  pylsp = {},        -- Python
+  rust_analyzer = {},-- Rust
 }
 ```
 
@@ -96,6 +100,7 @@ vim.g.hvim_formatters = {
 ```
 
 **With prettier and eslint:**
+
 ```lua
 vim.g.hvim_formatters = {
   formatters_by_ft = {
@@ -116,33 +121,37 @@ vim.g.hvim_theme = "onedark"
 -- vim.g.hvim_theme = "gruvbox"
 -- vim.g.hvim_theme = "tokyonight"
 -- vim.g.hvim_theme = "rose-pine"
+-- vim.g.hvim_theme = "github_dark"
+-- vim.g.hvim_theme = "github_light"
+-- vim.g.hvim_theme = "github_dark_dimmed"
 ```
 
 ## 🔌 Plugin List
 
-| Category                    | Plugin                      | Description                              |
-|-----------------------------|-----------------------------|-----------------------------------------|
-| **Core**                    | lazy.nvim                   | Plugin manager                          |
-|                            | mason.nvim                  | LSP/tool installer                      |
-|                            | nvim-lspconfig              | LSP configurations                      |
-| **Navigation & Search**     | fzf.vim                     | Fuzzy finder with ripgrep              |
-|                            | nvim-tree.lua               | File explorer                           |
-|                            | nvim-spectre                | Search and replace                      |
-| **Git**                     | vim-fugitive                | Git commands                            |
-|                            | gitsigns.nvim               | Git signs and hunk navigation          |
-| **Editor**                  | nvim-treesitter             | Syntax highlighting                     |
-|                            | nvim-cmp                    | Completion engine                       |
-|                            | Comment.nvim                | Smart commenting                        |
-|                            | nvim-autopairs              | Auto-close brackets                     |
-| **UI**                      | onedark.nvim                | Colorscheme                             |
-|                            | lualine.nvim                | Statusline                              |
-|                            | bufferline.nvim             | Buffer tabs                             |
-|                            | nvim-web-devicons           | File icons                              |
+| Category                | Plugin            | Description                   |
+| ----------------------- | ----------------- | ----------------------------- |
+| **Core**                | lazy.nvim         | Plugin manager                |
+|                         | mason.nvim        | LSP/tool installer            |
+|                         | nvim-lspconfig    | LSP configurations            |
+| **Navigation & Search** | fzf.vim           | Fuzzy finder with ripgrep     |
+|                         | nvim-tree.lua     | File explorer                 |
+|                         | nvim-spectre      | Search and replace            |
+| **Git**                 | vim-fugitive      | Git commands                  |
+|                         | gitsigns.nvim     | Git signs and hunk navigation |
+| **Editor**              | nvim-treesitter   | Syntax highlighting           |
+|                         | nvim-cmp          | Completion engine             |
+|                         | Comment.nvim      | Smart commenting              |
+|                         | nvim-autopairs    | Auto-close brackets           |
+| **UI**                  | onedark.nvim      | Colorscheme                   |
+|                         | lualine.nvim      | Statusline                    |
+|                         | bufferline.nvim   | Buffer tabs                   |
+|                         | nvim-web-devicons | File icons                    |
 
 ## 📁 File Structure
 
 ```
 ├── init.lua
+├── KEYMAPS.md              # Complete keymap reference
 ├── lua/
 │   ├── config/
 │   │   ├── autocmds.lua
@@ -164,4 +173,3 @@ vim.g.hvim_theme = "onedark"
 │       ├── themes.lua
 │       └── ui.lua
 ```
-

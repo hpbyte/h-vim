@@ -100,6 +100,16 @@ Complete reference for all keybindings in h-vim configuration.
 |-----|--------|
 | `<C-h>` | Previous buffer |
 | `<C-l>` | Next buffer |
+| `<leader>bd` | Delete current buffer |
+| `<leader>bl` | List all buffers |
+| `<leader>bf` | Go to first buffer |
+| `<leader>ba` | Go to last buffer |
+| `<leader>bn` | Next buffer |
+| `<leader>bp` | Previous buffer |
+| `<leader>bD` | Delete all buffers except current |
+| `<leader>bo` | Delete all other buffers |
+| `<leader>bw` | Save current buffer |
+| `<leader>bW` | Save all buffers |
 
 ## Code Formatting
 
