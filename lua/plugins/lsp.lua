@@ -17,7 +17,6 @@ return {
       "williamboman/mason-lspconfig.nvim",
     },
     config = function()
-      local lspconfig = require("lspconfig")
       local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
       local capabilities = cmp_nvim_lsp.default_capabilities()
@@ -55,7 +54,7 @@ return {
           on_attach = on_attach,
         }, config)
         
-        lspconfig[server].setup(server_config)
+        vim.lsp.config(server, server_config)
       end
     end,
   },
