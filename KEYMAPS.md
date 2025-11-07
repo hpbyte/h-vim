@@ -11,7 +11,6 @@ Complete reference for all keybindings in h-vim configuration.
 | `J` | Move line down | Visual |
 | `K` | Move line up | Visual |
 | `X` | Delete without yanking | Visual |
-| `<leader>ut` | Open theme picker | Normal |
 
 ## Window Navigation
 

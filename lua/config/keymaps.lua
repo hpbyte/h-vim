@@ -12,8 +12,6 @@ keymap.set("n", "<leader>pv", "<cmd>wincmd v<bar> Ex <bar> vertical resize 30<CR
 
 keymap.set("n", "<leader><CR>", "<cmd>so ~/.config/nvim/init.lua<CR>", opts)
 
-keymap.set("n", "<leader>ut", require("config.themes").select, opts)
-
 keymap.set("n", "<leader>+", "<cmd>vertical resize +5<CR>", opts)
 keymap.set("n", "<leader>-", "<cmd>vertical resize -5<CR>", opts)
 
