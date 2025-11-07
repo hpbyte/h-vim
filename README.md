@@ -113,9 +113,18 @@ vim.g.hvim_formatters = {
 
 ## 🎨 Themes
 
-Use `<leader>ut` (normal mode) or `:HvThemeSelect` to open an interactive theme picker. The following themes are available out of the box: OneDark, Catppuccin, Gruvbox, Tokyo Night, Rose Pine, GitHub Dark, GitHub Light, and GitHub Dark Dimmed.
+Choose your preferred theme by editing `lua/config/themes.lua`:
 
-To change the default theme on startup, update the `DEFAULT_THEME` value near the top of `lua/config/themes.lua` or set `vim.g.hvim_theme` before `require("config.themes")` is called in `init.lua`.
+```lua
+vim.g.hvim_theme = "onedark"
+-- vim.g.hvim_theme = "catppuccin"
+-- vim.g.hvim_theme = "gruvbox"
+-- vim.g.hvim_theme = "tokyonight"
+-- vim.g.hvim_theme = "rose-pine"
+-- vim.g.hvim_theme = "github_dark"
+-- vim.g.hvim_theme = "github_light"
+-- vim.g.hvim_theme = "github_dark_dimmed"
+```
 
 ## 🔌 Plugin List
 
