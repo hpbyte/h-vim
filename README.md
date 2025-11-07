@@ -10,9 +10,9 @@ A minimal Neovim config for speed and sanity.
 - Conditional loading for faster startups.
 - Traditional vim keybinds that actually make sense.
 
-![image](https://github.com/user-attachments/assets/76506261-db56-4548-80f4-d9556f3923dc)
+<img width="1782" height="1121" alt="Screenshot 2568-11-07 at 17 54 01" src="https://github.com/user-attachments/assets/0accf50a-bab3-4f60-bd8c-7421b5252575" />
 
-![image](https://github.com/user-attachments/assets/0721eeda-66e8-4eaf-a632-a5f02a563aef)
+<img width="1782" height="1121" alt="Screenshot 2568-11-07 at 17 54 24" src="https://github.com/user-attachments/assets/28a33472-2f47-4ca5-85c5-ef47d812a4e1" />
 
 ## ✨ Features
 
